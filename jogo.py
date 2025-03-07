@@ -41,4 +41,14 @@ def jogar():
         print("Você acertou e fez {} pontos!".format(pontos))
         break
     else 
+        if (maior):
+           print("Você errou! O seu chute foi maior do o número secreto.")
+        elif(menor):
+            print("Você errou! O seu chute foi menor do que o número secreto.")
+        pontos_perdidos = abs(numero_secreto - chute)
+        pontos = pontos - pontos_perdidos
+    print ("Fim de jogo!")
+
+if(__name__=="__main__");
+    jogar()    
 
